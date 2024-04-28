@@ -292,18 +292,23 @@ section .title::after{
 }
 
 /* services section styling */
-.services, .teams{
+.service, .teams{
     color:#fff;
     background: #111111e7;
 }
-.services .title::before,
+
+.service .text {
+    font-weight: bold;
+    font-size: 20px;
+}
+.service .title::before,
 .teams .title::before{
     background: #fff;
 }
-.services .title::after,
+.service .title::after,
 .teams .title::after{
     background: #111;
-    content: "what i provide";
+    /* content: "what i provide"; */
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
@@ -314,24 +319,24 @@ section .title::after{
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.services .serv-content .card:hover{
+.service .serv-content .card:hover{
     background: #0D1E2A;
 }
-.services .serv-content .card .box{
+.service .serv-content .card .box{
     transition: all 0.3s ease;
 }
-.services .serv-content .card:hover .box{
+.service .serv-content .card:hover .box{
     transform: scale(1.05);
 }
-.services .serv-content .card i{
+.service .serv-content .card i{
     font-size: 50px;
     color: #095AB5;
     transition: color 0.3s ease;
 }
-.services .serv-content .card:hover i{
+.service .serv-content .card:hover i{
     color: #fff;
 }
-.services .serv-content .card .text{
+.service .serv-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
@@ -413,10 +418,10 @@ section .title::after{
 }
 
 /* teams section styling */
-.teams .title::after{
-    content: "who's with me";
-}
-.teams .carousel .card{
+/* .teams .title::after{
+    content: "What i've worked on";
+} */
+.teams .carousel .card, .service .carousel .card{
     background: #222;
     border-radius: 6px;
     padding: 25px 35px;
