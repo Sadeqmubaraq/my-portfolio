@@ -717,3 +717,16 @@ footer span a:hover{
         line-height: 38px;
     }
 }
+.text{
+    color: #fff;
+}
+.icon5{
+    display:inline-block;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+#icon5{
+    width: 30px;
+    height: 30px;
+}
